@@ -24,6 +24,10 @@
     color: #4A955C;
 }
 
+.link:hover {
+    color: #4A955C;
+}
+
 .logo-mobile {
     font-size: 1.5rem;
     color: #ffffff;
@@ -38,7 +42,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
     .navigation-bar {
         display: none;
     }

@@ -12,7 +12,7 @@
     color: #4A955C;
 }
 
-@media (min-width: 651px) {
+@media (min-width: 1001px) {
     .navigation-bar {
         display: flex;
         justify-content: space-between;
