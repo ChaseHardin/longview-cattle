@@ -18,7 +18,7 @@ export const MobileNavigation = ({ links }) => {
   const renderMenuOptions = () => {
     return (
       <div className="options-container">
-        <div className='menu-action' onClick={handleOnClick}>
+        <div className='menu-action' onClick={handleOnClick} role={'button'}>
           <CloseIcon
             fontSize="large"
           />
