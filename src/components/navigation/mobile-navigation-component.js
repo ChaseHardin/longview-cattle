@@ -8,7 +8,12 @@ import "../../styles/mobile-navigation.css"
 export const MobileNavigation = ({ links }) => {
   const [isOpen, setIsOpen] = React.useState(false)
 
-  const handleOnClick = () => setIsOpen(!isOpen)
+  const handleOnClick = () => {
+      setIsOpen(!isOpen);
+      console.log('************************************');
+      console.log('isOpen:: ', isOpen)
+      console.log('************************************');
+  }
 
   const renderMenuOptions = () => {
     return (
