@@ -1,0 +1,18 @@
+.things-we-offer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.verified-icon-style {
+    color: #4A955C;
+    font-size: 5rem !important;
+}
+
+.verification-icon {
+    text-align: center;
+}
+
+.verified-icon {
+    font-size: 2.5rem;
+}
