@@ -5,6 +5,19 @@
  */
 
 module.exports = {
-  pathPrefix: '/longview-cattle',
-  plugins: [],
+  pathPrefix: "/longview-cattle",
+  siteMetadata: {
+    websiteName: "Longview Cattle",
+    slogan: "Black Herefords of Longview Farms",
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "markdown-pages",
+        path: `${__dirname}/src/pages`
+      },
+    },
+    `gatsby-transformer-remark`
+  ],
 }
