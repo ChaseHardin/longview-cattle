@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { NavigationBar } from "../components/navbar-component"
+import { NavigationBar } from "../components/navigation/navbar-component"
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
