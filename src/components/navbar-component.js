@@ -9,11 +9,11 @@ export const NavigationBar = () => {
         <div className='navigation-bar'>
             <Logo/>
             <div className='navigation-links'>
-                <Link to='/'>Home</Link>
-                <Link to='/bulls'>Bulls</Link>
-                <Link to='/cows'>Cows</Link>
-                <Link to='/about'>About</Link>
-                <Link to='/contact'>Contact</Link>
+                <Link to='/longview-cattle'>Home</Link>
+                <Link to='/longview-cattle/bulls'>Bulls</Link>
+                <Link to='/longview-cattle/cows'>Cows</Link>
+                <Link to='/longview-cattle/about'>About</Link>
+                <Link to='/longview-cattle/contact'>Contact</Link>
             </div>
         </div>
     )
