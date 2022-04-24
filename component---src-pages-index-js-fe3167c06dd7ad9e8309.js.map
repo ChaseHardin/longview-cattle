@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-index-js-fe3167c06dd7ad9e8309.js","mappings":"gLAEe,SAASA,IACtB,OAAO","sources":["webpack://longview-cattle/./src/pages/index.js"],"sourcesContent":["import React from \"react\"\n\nexport default function Home() {\n  return <div>Hello world 2!</div>\n}\n"],"names":["Home"],"sourceRoot":""}
