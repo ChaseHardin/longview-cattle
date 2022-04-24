@@ -1,0 +1,4 @@
+---
+slug: "/sale"
+type: "Sale"
+---

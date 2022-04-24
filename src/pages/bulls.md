@@ -1,0 +1,4 @@
+---
+slug: "/bulls"
+type: "Bulls"
+---

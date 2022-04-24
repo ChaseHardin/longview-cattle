@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { NavigationBar } from "../components/navigation/navbar-component"
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -9,7 +10,7 @@ export default function Template({
   return (
     <>
       <NavigationBar />
-      <div className="blog-post-container">
+      <div className="template-buffer">
         <div className="blog-post">
           <h1>{frontmatter.name}</h1>
           <h2>{frontmatter.type}</h2>

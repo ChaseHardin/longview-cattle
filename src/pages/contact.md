@@ -1,0 +1,4 @@
+---
+slug: "/contact"
+type: "Contact"
+---

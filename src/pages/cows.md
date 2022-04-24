@@ -1,0 +1,4 @@
+---
+slug: "/cows"
+type: "Cows"
+---

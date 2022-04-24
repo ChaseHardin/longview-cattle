@@ -18,13 +18,17 @@ export const NavigationBar = () => {
       title: "Cows",
     },
     {
+      to: "/sale",
+      title: "Sale",
+    },
+    {
       to: "/about",
       title: "About",
     },
     {
       to: "/contact",
       title: "Contact",
-    }
+    },
   ]
 
   return (

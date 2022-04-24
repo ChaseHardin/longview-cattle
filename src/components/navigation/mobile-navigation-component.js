@@ -8,7 +8,7 @@ import "../../styles/mobile-navigation.css"
 export const MobileNavigation = ({ links }) => {
   const [isOpen, setIsOpen] = React.useState(false)
 
-  const handleOnClick = () => setIsOpen(!isOpen);
+  const handleOnClick = () => setIsOpen(!isOpen)
 
   const renderMenuOptions = () => {
     return (
@@ -18,7 +18,12 @@ export const MobileNavigation = ({ links }) => {
         </div>
         <div className="link-options">
           {links.map(link => (
-            <Link to={link.to} className={"link"} key={link.title}>
+            <Link
+              key={link.title}
+              className={"link"}
+              to={link.to}
+              onClick={() => setIsOpen(false)}
+            >
               {link.title}
             </Link>
           ))}
