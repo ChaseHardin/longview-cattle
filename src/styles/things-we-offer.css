@@ -1,3 +1,9 @@
+.things-we-offer-header {
+    text-align: center;
+    font-size: 3rem;
+    color: #222222
+}
+
 .things-we-offer-container {
     display: flex;
     justify-content: space-around;
@@ -15,4 +21,5 @@
 
 .verified-icon {
     font-size: 2.5rem;
+    color: #222222;
 }
