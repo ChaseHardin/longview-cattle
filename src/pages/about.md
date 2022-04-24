@@ -1,0 +1,4 @@
+---
+slug: "/about"
+type: "About"
+---
