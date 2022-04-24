@@ -8,24 +8,17 @@ import "../../styles/mobile-navigation.css"
 export const MobileNavigation = ({ links }) => {
   const [isOpen, setIsOpen] = React.useState(false)
 
-  const handleOnClick = () => {
-      setIsOpen(!isOpen);
-      console.log('************************************');
-      console.log('isOpen:: ', isOpen)
-      console.log('************************************');
-  }
+  const handleOnClick = () => setIsOpen(!isOpen);
 
   const renderMenuOptions = () => {
     return (
       <div className="options-container">
-        <div className='menu-action' onClick={handleOnClick} role={'button'}>
-          <CloseIcon
-            fontSize="large"
-          />
+        <div className="menu-action" onClick={handleOnClick}>
+          <CloseIcon fontSize="large" />
         </div>
         <div className="link-options">
           {links.map(link => (
-            <Link to={link.to} className={"link"}>
+            <Link to={link.to} className={"link"} key={link.title}>
               {link.title}
             </Link>
           ))}
@@ -38,11 +31,9 @@ export const MobileNavigation = ({ links }) => {
     <>
       <div className="navigation-bar-mobile">
         <div className="logo-mobile">{"Longview Cattle"}</div>
-        <MenuIcon
-          fontSize="large"
-          className="menu-action"
-          onClick={handleOnClick}
-        />
+        <div onClick={handleOnClick}>
+          <MenuIcon fontSize="large" className="menu-action" />
+        </div>
       </div>
       {isOpen && renderMenuOptions()}
     </>

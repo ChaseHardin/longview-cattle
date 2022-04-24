@@ -9,7 +9,7 @@ export const DesktopNavigation = ({ links }) => {
     <div className="navigation-bar">
       <Logo />
       <div className="navigation-links">
-        {links.map(link => <Link to={link.to}>{link.title}</Link>)}
+        {links.map(link => <Link to={link.to} key={link.title}>{link.title}</Link>)}
       </div>
     </div>
   )

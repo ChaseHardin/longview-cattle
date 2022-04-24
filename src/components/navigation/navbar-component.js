@@ -6,23 +6,23 @@ import { DesktopNavigation } from "./desktop-navigation-component"
 export const NavigationBar = () => {
   const links = [
     {
-      to: "/longview-cattle/",
+      to: "/",
       title: "Home",
     },
     {
-      to: "/longview-cattle/bulls",
+      to: "/bulls",
       title: "Bulls",
     },
     {
-      to: "/longview-cattle/cows",
+      to: "/cows",
       title: "Cows",
     },
     {
-      to: "/longview-cattle/about",
+      to: "/about",
       title: "About",
     },
     {
-      to: "/longview-cattle/contact",
+      to: "/contact",
       title: "Contact",
     }
   ]
