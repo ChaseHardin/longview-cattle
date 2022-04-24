@@ -1,0 +1,20 @@
+.logo {
+    width: 10rem;
+    background-color: #4A955C;
+    text-align: center;
+    margin-left: 2rem;
+    color: #ffffff;
+    padding: 20px 8px 50px 8px;
+    margin-top: 2.8rem;
+    z-index: 1;
+}
+
+.logo .logo-text {
+    font-size: 2rem;
+    justify-content: middle;
+    font-weight: bold;
+}
+
+.logo .logo-sub-text {
+    font-size: 1.25rem;
+}

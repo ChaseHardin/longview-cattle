@@ -1,4 +1,5 @@
 import React from 'react';
+import { Logo } from './logo-component';
 import { Link } from 'gatsby';
 
 import '../styles/navigation.css';
@@ -6,7 +7,7 @@ import '../styles/navigation.css';
 export const NavigationBar = () => {
     return (
         <div className='navigation-bar'>
-            <div className='navigation-header'>Longview Farms</div>
+            <Logo/>
             <div className='navigation-links'>
                 <Link to='/'>Home</Link>
                 <Link to='/bulls'>Bulls</Link>
