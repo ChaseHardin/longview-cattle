@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-markdown-remark-frontmatter-slug-js",
     "path": "/sale/cows/cow02/",
     "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"slug":"/sale/cows/cow02","name":"Cow 02","type":"sale"}}},"pageContext":{"id":"e0ab2484-8ce8-599a-84b7-ed783b3ecad2","frontmatter__slug":"/sale/cows/cow02","__params":{"frontmatter__slug":"sale"}}},
-    "staticQueryHashes": ["2140618151"]}
+    "staticQueryHashes": ["593833907"]}

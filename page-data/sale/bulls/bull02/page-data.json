@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-markdown-remark-frontmatter-slug-js",
     "path": "/sale/bulls/bull02/",
     "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"slug":"/sale/bulls/bull02","name":"Bull 02","type":"sale"}}},"pageContext":{"id":"8805d764-89c6-5c2d-808f-a58b67409b73","frontmatter__slug":"/sale/bulls/bull02","__params":{"frontmatter__slug":"sale"}}},
-    "staticQueryHashes": ["2140618151"]}
+    "staticQueryHashes": ["593833907"]}

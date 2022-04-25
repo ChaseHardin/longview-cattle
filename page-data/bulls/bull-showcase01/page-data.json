@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-markdown-remark-frontmatter-slug-js",
     "path": "/bulls/bull-showcase01/",
     "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"slug":"/bulls/bull-showcase01","name":"Bull Showcase 01","type":"showcase"}}},"pageContext":{"id":"201db9da-7926-5cb9-9484-f48711bcb39d","frontmatter__slug":"/bulls/bull-showcase01","__params":{"frontmatter__slug":"bulls"}}},
-    "staticQueryHashes": ["2140618151"]}
+    "staticQueryHashes": ["593833907"]}
