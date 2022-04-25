@@ -12,6 +12,8 @@ export const useCattleForSale = () => {
               name
               shortDescription
               slug
+              sex
+              type
             }
           }
         }
