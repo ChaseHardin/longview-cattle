@@ -1,4 +1,0 @@
----
-slug: "/bulls"
-type: "Bulls"
----

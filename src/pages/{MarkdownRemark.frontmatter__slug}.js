@@ -2,31 +2,46 @@ import React from "react"
 import { graphql } from "gatsby"
 import { NavigationBar } from "../components/navigation/navbar-component"
 import { CattleForSale } from "../components/cattle-sale-component"
-import { createTheme } from '@mui/material/styles';
+import { Cattle } from "../components/cattle-component"
+import { createTheme } from "@mui/material/styles"
 import { ThemeProvider } from "@emotion/react"
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#4A955C',
+      main: "#4A955C",
     },
     secondary: {
-      main: '#222222',
+      main: "#222222",
     },
   },
-});
+})
 
 export default function Template({ data, location }) {
-  const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
 
-  const parsedPathname = location.pathname.replaceAll("/", "");
-  
-  if (parsedPathname === 'longview-cattlesale' || parsedPathname === 'sale') {
+  const parsedPathname = location.pathname.replaceAll("/", "")
+
+  if (parsedPathname === "longview-cattlesale" || parsedPathname === "sale") {
     return (
       <ThemeProvider theme={theme}>
         <NavigationBar />
         <CattleForSale />
+      </ThemeProvider>
+    )
+  }
+  console.log('path ', parsedPathname)
+  if (
+    parsedPathname === "longview-cattleshowcase" || parsedPathname === "showcase"
+  ) {
+    console.log('************************************');
+    console.log('value:: ', 'did')
+    console.log('************************************');
+    return (
+      <ThemeProvider theme={theme}>
+        <NavigationBar />
+        <Cattle />
       </ThemeProvider>
     )
   }

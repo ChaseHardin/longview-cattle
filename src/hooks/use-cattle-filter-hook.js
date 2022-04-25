@@ -5,17 +5,17 @@ const dataDictionary = {
   3: "straws",
 }
 
-export const useCattleFilter = (cattle, tabValue) => {
+export const useCattleFilter = (cattle, tabValue, type) => {
   if (dataDictionary[tabValue] === "all") {
     return cattle.filter(edge => {
-      return edge.node.frontmatter.sex && edge.node.frontmatter.type === "sale"
+      return edge.node.frontmatter.sex && edge.node.frontmatter.type === type
     })
   }
 
   const cattleToSell = cattle.filter(edge => {
     return (
       edge.node.frontmatter.sex === dataDictionary[tabValue] &&
-      edge.node.frontmatter.type === "sale"
+      edge.node.frontmatter.type === type
     )
   })
 
