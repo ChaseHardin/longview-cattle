@@ -1,10 +1,10 @@
 import React from "react"
 import { CattleCard } from "./card-component"
 import { Grid, Tabs, Tab, Box } from "@mui/material"
+import { styled } from "@mui/material/styles";
 
 import { useCattleFilter } from "../hooks/use-cattle-filter-hook"
 import { useCattleForSale } from "../hooks/use-cattle-sale-hook"
-
 import "../styles/cattle-sale.css"
 
 export const CattleForSale = () => {
@@ -36,17 +36,29 @@ export const CattleForSale = () => {
 
   const handleTabsChange = (_, newValue) => setTabValue(newValue)
 
+  const StyledTabs = styled(Tabs)({
+    "& .MuiTabs-indicator": {
+      backgroundColor: "#4A955C"
+    }
+  });
+
+  const StyledTab = styled(Tab)({
+    "&.Mui-selected": {
+      color: "#4A955C"
+    }
+  });
+
   return (
     <>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }} className="tabs">
-        <Tabs onChange={handleTabsChange} value={tabValue}>
-          <Tab label="All Animals" id={0} />
-          <Tab label="Bulls" id={1} />
-          <Tab label="Females" id={2} />
-          <Tab label="Straws" id={3} />
-        </Tabs>
+      <Box xs={{ borderBottom: 1, borderColor: "divider" }} className="tabs">
+        <StyledTabs onChange={handleTabsChange} value={tabValue}>
+          <StyledTab label="All Animals" id={0} />
+          <StyledTab label="Bulls" id={1} />
+          <StyledTab label="Females" id={2} />
+          <StyledTab label="Straws" id={3} />
+        </StyledTabs>
       </Box>
-      <Grid container xs={12} className={"cattle-sale-container"}>
+      <Grid container className={"cattle-sale-container"}>
         {renderCards()}
       </Grid>
     </>
