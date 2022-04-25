@@ -52,10 +52,9 @@ export const CattleForSale = () => {
     <>
       <Box xs={{ borderBottom: 1, borderColor: "divider" }} className="tabs">
         <StyledTabs onChange={handleTabsChange} value={tabValue}>
-          <StyledTab label="All Animals" id={0} />
+          <StyledTab label="All Cattle" id={0} />
           <StyledTab label="Bulls" id={1} />
           <StyledTab label="Females" id={2} />
-          <StyledTab label="Straws" id={3} />
         </StyledTabs>
       </Box>
       <Grid container className={"cattle-sale-container"}>
