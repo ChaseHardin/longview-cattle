@@ -7,7 +7,9 @@ export default function Template({ data, location }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
-  if (location.pathname.replaceAll("/", "").includes('sale')) {
+  const parsedPathname = location.pathname.replaceAll("/", "");
+  
+  if (parsedPathname === 'longview-cattlesale' || parsedPathname === 'sale') {
     return (
       <>
         <NavigationBar />
