@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-markdown-remark-frontmatter-slug-js",
+    "path": "/showcase/",
+    "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"slug":"/showcase","name":null,"type":"Showcase"}}},"pageContext":{"id":"70bce0ea-4498-578c-94eb-d9d68d1583d7","frontmatter__slug":"/showcase","__params":{"frontmatter__slug":"showcase"}}},
+    "staticQueryHashes": ["593833907"]}
