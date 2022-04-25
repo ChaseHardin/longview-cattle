@@ -10,6 +10,8 @@ export const useCattleForSale = () => {
             id
             frontmatter {
               name
+              shortDescription
+              slug
             }
           }
         }

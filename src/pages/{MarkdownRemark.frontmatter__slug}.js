@@ -1,12 +1,25 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { NavigationBar } from "../components/navigation/navbar-component"
+import { CattleForSale } from "../components/cattle-sale-component"
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+export default function Template({ data, location }) {
+  const { markdownRemark } = data;
+  const { frontmatter, html } = markdownRemark;
+
+  const templateLookup = {
+    ["sale"]: <CattleForSale />,
+  }[location.pathname.replaceAll("/", "")]
+
+  if (templateLookup) {
+    return (
+      <>
+        <NavigationBar />
+        {templateLookup}
+      </>
+    )
+  }
+
   return (
     <>
       <NavigationBar />
