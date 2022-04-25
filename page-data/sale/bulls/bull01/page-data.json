@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-markdown-remark-frontmatter-slug-js",
+    "path": "/sale/bulls/bull01/",
+    "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"slug":"/sale/bulls/bull01","name":"Bull 01","type":"sale"}}},"pageContext":{"id":"0fdd13ac-2fb0-56b3-b85e-9f8a81df7a46","frontmatter__slug":"/sale/bulls/bull01","__params":{"frontmatter__slug":"sale"}}},
+    "staticQueryHashes": ["2140618151"]}

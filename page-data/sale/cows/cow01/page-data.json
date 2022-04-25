@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-markdown-remark-frontmatter-slug-js",
+    "path": "/sale/cows/cow01/",
+    "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"slug":"/sale/cows/cow01","name":"Cow 01","type":"sale"}}},"pageContext":{"id":"610d4fa0-7b66-5618-a4d0-ab3661178a89","frontmatter__slug":"/sale/cows/cow01","__params":{"frontmatter__slug":"sale"}}},
+    "staticQueryHashes": ["2140618151"]}

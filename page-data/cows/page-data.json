@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-markdown-remark-frontmatter-slug-js",
     "path": "/cows/",
     "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"slug":"/cows","name":null,"type":"Cows"}}},"pageContext":{"id":"064102e7-40b0-5423-bde8-23a5a8f2aaad","frontmatter__slug":"/cows","__params":{"frontmatter__slug":"cows"}}},
-    "staticQueryHashes": []}
+    "staticQueryHashes": ["2140618151"]}

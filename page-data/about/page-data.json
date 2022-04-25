@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-markdown-remark-frontmatter-slug-js",
     "path": "/about/",
     "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"slug":"/about","name":null,"type":"About"}}},"pageContext":{"id":"e2183a98-48de-5583-af45-b3eac2de4c24","frontmatter__slug":"/about","__params":{"frontmatter__slug":"about"}}},
-    "staticQueryHashes": []}
+    "staticQueryHashes": ["2140618151"]}

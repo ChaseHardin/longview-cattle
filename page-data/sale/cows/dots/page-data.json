@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-markdown-remark-frontmatter-slug-js",
-    "path": "/sale/cows/dots/",
-    "result": {"data":{"markdownRemark":{"html":"","frontmatter":{"slug":"/sale/cows/dots","name":"Dots","type":"sale"}}},"pageContext":{"id":"aa6749d1-9983-57bb-bd1c-f77b58757390","frontmatter__slug":"/sale/cows/dots","__params":{"frontmatter__slug":"sale"}}},
-    "staticQueryHashes": []}
