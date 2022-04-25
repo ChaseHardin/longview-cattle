@@ -7,15 +7,11 @@ export default function Template({ data, location }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
-  const templateLookup = {
-    ["sale"]: <CattleForSale />,
-  }[location.pathname.replaceAll("/", "")]
-
-  if (templateLookup) {
+  if (location.pathname.replaceAll("/", "").includes('sale')) {
     return (
       <>
         <NavigationBar />
-        {templateLookup}
+        <CattleForSale />
       </>
     )
   }
