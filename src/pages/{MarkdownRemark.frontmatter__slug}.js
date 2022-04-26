@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { CattleForSale } from "../components/cattle-sale-component"
 import { Cattle } from "../components/cattle-component"
+import { Contact } from "../components/contact-component"
 import { AppRenderer } from "../components/app-renderer-component"
 
 export default function Template({ data, location }) {
@@ -17,7 +18,7 @@ export default function Template({ data, location }) {
       </AppRenderer>
     )
   }
-  console.log("path ", parsedPathname)
+
   if (
     parsedPathname === "longview-cattleshowcase" ||
     parsedPathname === "showcase"
@@ -25,6 +26,17 @@ export default function Template({ data, location }) {
     return (
       <AppRenderer>
         <Cattle />
+      </AppRenderer>
+    )
+  }
+
+  if (
+    parsedPathname === "longview-cattlecontact" ||
+    parsedPathname === "contact"
+  ) {
+    return (
+      <AppRenderer>
+        <Contact />
       </AppRenderer>
     )
   }
