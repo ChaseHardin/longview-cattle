@@ -22,7 +22,8 @@ export const CattleContainer = ({ type }) => {
           key={index}
           sm={12}
           md={6}
-          lg={3}
+          lg={4}
+          xl={3}
           className={"card-container"}
         >
           <CattleCard

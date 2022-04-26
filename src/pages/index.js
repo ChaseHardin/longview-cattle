@@ -1,14 +1,11 @@
 import React from "react"
-import { NavigationBar } from "../components/navigation/navbar-component";
-import { ThingsWeOffer } from "../components/things-we-offer-component";
-
-import '../styles/main.css';
+import { ThingsWeOffer } from "../components/things-we-offer-component"
+import { AppRenderer } from "../components/app-renderer-component"
 
 export default function Home() {
   return (
-    <>
-      <NavigationBar/>
-      <ThingsWeOffer/>
-    </>
+    <AppRenderer>
+      <ThingsWeOffer />
+    </AppRenderer>
   )
 }

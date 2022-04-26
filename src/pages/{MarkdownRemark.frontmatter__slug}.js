@@ -1,21 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { NavigationBar } from "../components/navigation/navbar-component"
 import { CattleForSale } from "../components/cattle-sale-component"
 import { Cattle } from "../components/cattle-component"
-import { createTheme } from "@mui/material/styles"
-import { ThemeProvider } from "@emotion/react"
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#4A955C",
-    },
-    secondary: {
-      main: "#222222",
-    },
-  },
-})
+import { AppRenderer } from "../components/app-renderer-component"
 
 export default function Template({ data, location }) {
   const { markdownRemark } = data
@@ -25,30 +12,25 @@ export default function Template({ data, location }) {
 
   if (parsedPathname === "longview-cattlesale" || parsedPathname === "sale") {
     return (
-      <ThemeProvider theme={theme}>
-        <NavigationBar />
+      <AppRenderer>
         <CattleForSale />
-      </ThemeProvider>
+      </AppRenderer>
     )
   }
-  console.log('path ', parsedPathname)
+  console.log("path ", parsedPathname)
   if (
-    parsedPathname === "longview-cattleshowcase" || parsedPathname === "showcase"
+    parsedPathname === "longview-cattleshowcase" ||
+    parsedPathname === "showcase"
   ) {
-    console.log('************************************');
-    console.log('value:: ', 'did')
-    console.log('************************************');
     return (
-      <ThemeProvider theme={theme}>
-        <NavigationBar />
+      <AppRenderer>
         <Cattle />
-      </ThemeProvider>
+      </AppRenderer>
     )
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <NavigationBar />
+    <AppRenderer>
       <div className="template-buffer">
         <div className="blog-post">
           <h1>{frontmatter.name}</h1>
@@ -59,7 +41,7 @@ export default function Template({ data, location }) {
           />
         </div>
       </div>
-    </ThemeProvider>
+    </AppRenderer>
   )
 }
 export const pageQuery = graphql`

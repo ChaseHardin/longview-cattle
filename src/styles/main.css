@@ -5,3 +5,14 @@ body {
 .template-buffer {
     margin-top: 4rem;
 }
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content-container {
+    flex: 1;
+    height: -10rem; 
+}
