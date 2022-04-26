@@ -29,8 +29,12 @@ export function CattleCard({title, shortDescription, linkTo}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small" onClick={() => navigate(linkTo)} >Learn More</Button>
+        <Button 
+        style={{width: '100%'}}
+        size={'large'}
+        onClick={() => navigate(linkTo)}
+        variant={'contained'}
+        >More info</Button>
       </CardActions>
     </Card>
   )

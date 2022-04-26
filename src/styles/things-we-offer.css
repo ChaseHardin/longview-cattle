@@ -1,9 +1,3 @@
-.things-we-offer-header {
-    text-align: center;
-    font-size: 3rem;
-    color: #222222
-}
-
 .buffer {
     margin-top: 5rem;
 }
@@ -21,9 +15,4 @@
 .verification-icon {
     text-align: center;
     padding: 3rem;
-}
-
-.verified-icon {
-    font-size: 2.5rem;
-    color: #222222;
 }

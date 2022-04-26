@@ -8,13 +8,3 @@
     margin-top: 2.8rem;
     z-index: 1;
 }
-
-.logo .logo-text {
-    font-size: 2rem;
-    justify-content: middle;
-    font-weight: bold;
-}
-
-.logo .logo-sub-text {
-    font-size: 1.25rem;
-}

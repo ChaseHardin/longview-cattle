@@ -1,12 +1,17 @@
 import React from "react"
+import Typography from "@mui/material/Typography"
 
 import "../styles/logo.css"
 
 export const Logo = () => {
   return (
     <div className="logo">
-      <div className="logo-text">{"Longview"}</div>
-      <div className="logo-sub-text">{"CATTLE"}</div>
+      <Typography fontSize={'2rem'} justifyContent='middle' fontWeight={'bold'}>
+        Longview
+      </Typography>
+      <Typography fontSize='1.25rem'>
+        CATTLE
+      </Typography>
     </div>
   )
 }

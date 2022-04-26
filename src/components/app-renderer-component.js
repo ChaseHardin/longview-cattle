@@ -7,6 +7,10 @@ import { Footer } from "./footer-component"
 import "../styles/main.css"
 
 const theme = createTheme({
+  typography: {
+    'fontFamily': 'Open Sans',
+    'fontSize': 14
+  },
   palette: {
     primary: {
       main: "#4A955C",
