@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: "/",
   siteMetadata: {
     websiteName: "Longview Cattle",
     slogan: "Black Herefords of Longview Farms",
