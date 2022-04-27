@@ -11,7 +11,7 @@ export default function Template({ data, location }) {
 
   const parsedPathname = location.pathname.replaceAll("/", "")
 
-  if (parsedPathname === "longview-cattlesale" || parsedPathname === "sale") {
+  if (parsedPathname === "sale") {
     return (
       <AppRenderer>
         <CattleForSale />
@@ -19,10 +19,7 @@ export default function Template({ data, location }) {
     )
   }
 
-  if (
-    parsedPathname === "longview-cattleshowcase" ||
-    parsedPathname === "showcase"
-  ) {
+  if (parsedPathname === "showcase") {
     return (
       <AppRenderer>
         <Cattle />
@@ -30,10 +27,7 @@ export default function Template({ data, location }) {
     )
   }
 
-  if (
-    parsedPathname === "longview-cattlecontact" ||
-    parsedPathname === "contact"
-  ) {
+  if (parsedPathname === "contact") {
     return (
       <AppRenderer>
         <Contact />
