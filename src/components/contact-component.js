@@ -31,32 +31,37 @@ export const Contact = () => {
         >
           <input type="hidden" name="form-name" value="Contact Form" />
 
-          <Box
-            sx={{ display: "flex", alignItems: "flex-end", padding: "1rem" }}
-          >
-            <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
-            <TextField
-              fullWidth
-              id="input-with-sx"
-              label="Full name"
-              variant="standard"
-              name="name"
-            />
-          </Box>
-
-          <Box
-            sx={{ display: "flex", alignItems: "flex-end", padding: "1rem" }}
-          >
-            <EmailIcon sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+          <Box sx={{ display: "flex", alignItems: "center", padding: "1rem" }}>
+            <div style={{ marginRight: "10px" }}>
+              <AccountCircle
+                sx={{ color: "action.active" }}
+                fontSize={"large"}
+              />
+            </div>
             <TextField
               required
               fullWidth
-              id="input-with-sx"
-              label="Email"
-              variant="standard"
+              label="Full Name"
               color="primary"
-              type="email" 
+              name="name"
+              size="small"
+            />
+          </Box>
+
+          <Box
+            sx={{ display: "flex", alignItems: "center", padding: "1rem" }}
+          >
+            <div style={{ marginRight: "10px" }}>
+              <EmailIcon sx={{ color: "action.active" }} fontSize={"large"} />
+            </div>
+            <TextField
+              required
+              fullWidth
+              label="Email"
+              color="primary"
+              type="email"
               name="email"
+              size="small"
             />
           </Box>
 
@@ -64,6 +69,7 @@ export const Contact = () => {
             sx={{ display: "flex", alignItems: "flex-end", padding: "1rem" }}
           >
             <TextField
+              required
               fullWidth
               id="outlined-multiline-static"
               label="Message"
@@ -75,11 +81,7 @@ export const Contact = () => {
           <Box
             sx={{ display: "flex", alignItems: "flex-end", padding: "1rem" }}
           >
-            <Button
-              type={"submit"}
-              size={"large"}
-              variant={"contained"}
-            >
+            <Button type={"submit"} size={"large"} variant={"contained"}>
               Send Email
             </Button>
           </Box>
