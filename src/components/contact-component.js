@@ -40,6 +40,7 @@ export const Contact = () => {
               id="input-with-sx"
               label="Full name"
               variant="standard"
+              name="name"
             />
           </Box>
 
@@ -54,6 +55,8 @@ export const Contact = () => {
               label="Email"
               variant="standard"
               color="primary"
+              type="email" 
+              name="email"
             />
           </Box>
 
@@ -66,6 +69,7 @@ export const Contact = () => {
               label="Message"
               multiline
               rows={12}
+              name="message"
             />
           </Box>
           <Box
