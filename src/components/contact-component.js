@@ -1,5 +1,5 @@
 import React from "react"
-import { Button, Grid } from "@mui/material"
+import { Button, Grid, Typography } from "@mui/material"
 import EmailIcon from "@mui/icons-material/Email"
 import { TextField } from "@mui/material"
 import { AccountCircle } from "@mui/icons-material"
@@ -27,10 +27,13 @@ export const Contact = () => {
           name="Contact Form"
           method="POST"
           data-netlify="true"
-          style={{ marginTop: "6rem" }}
+          style={{ marginTop: "3rem" }}
         >
           <input type="hidden" name="form-name" value="Contact Form" />
-
+          
+          <Box sx={{ display: "flex", alignItems: "center", padding: "1rem" }}>
+            <Typography fontSize={'1.6rem'}>Get in touch with any questions!</Typography>
+          </Box>
           <Box sx={{ display: "flex", alignItems: "center", padding: "1rem" }}>
             <div style={{ marginRight: "10px" }}>
               <AccountCircle
@@ -48,9 +51,7 @@ export const Contact = () => {
             />
           </Box>
 
-          <Box
-            sx={{ display: "flex", alignItems: "center", padding: "1rem" }}
-          >
+          <Box sx={{ display: "flex", alignItems: "center", padding: "1rem" }}>
             <div style={{ marginRight: "10px" }}>
               <EmailIcon sx={{ color: "action.active" }} fontSize={"large"} />
             </div>
