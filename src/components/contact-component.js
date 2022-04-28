@@ -3,26 +3,28 @@ import { Button, Grid, Typography } from "@mui/material"
 import EmailIcon from "@mui/icons-material/Email"
 import { TextField } from "@mui/material"
 import { AccountCircle } from "@mui/icons-material"
-import { Box } from "@mui/material"
+import { Box, Avatar } from "@mui/material"
+import profilePicture from "../images/profile-pic.jpg"
 
 import "../styles/contact.css"
-
-// const handleSubmit = event => {
-//   event.preventDefault()
-// }
 
 export const Contact = () => {
   return (
     <Grid container display={"flex"}>
-      <Grid xs={12} sm={4}>
-        <div className="contact-container">
-          <div className="text">
-            <div>Don Hardin</div>
-            <div>515-313-8982</div>
+      <Grid xs={12} sm={6} md={4}>
+        <div className='profile-pic-container'>
+          <Avatar
+            alt="Profile Picture"
+            src={profilePicture}
+            sx={{ width: '300px', height: '300px' }}
+          />
+          <div className="sub-text-container">
+            <div className='text'>Don Hardin</div>
+            <div className='text'>515-313-8982</div>
           </div>
         </div>
       </Grid>
-      <Grid item xs={12} sm={8}>
+      <Grid item xs={12} sm={6} md={8}>
         <form
           name="Contact Form"
           method="POST"
@@ -30,9 +32,11 @@ export const Contact = () => {
           style={{ marginTop: "3rem" }}
         >
           <input type="hidden" name="form-name" value="Contact Form" />
-          
+
           <Box sx={{ display: "flex", alignItems: "center", padding: "1rem" }}>
-            <Typography fontSize={'1.6rem'}>Get in touch with any questions!</Typography>
+            <Typography fontSize={"1.6rem"}>
+              Get in touch with any questions!
+            </Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center", padding: "1rem" }}>
             <div style={{ marginRight: "10px" }}>
