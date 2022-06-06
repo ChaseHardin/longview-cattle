@@ -8,29 +8,18 @@ import { AppRenderer } from "../components/app-renderer-component"
 export default function Template({ data, location }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-
   const parsedPathname = location.pathname.replaceAll("/", "")
 
-  if (parsedPathname === "sale") {
-    return (
-      <AppRenderer>
-        <CattleForSale />
-      </AppRenderer>
-    )
-  }
+  const componentLookup = {
+    sale: <CattleForSale/>,
+    showcase: <Cattle/>,
+    contact: <Contact/>
+  }[parsedPathname];
 
-  if (parsedPathname === "showcase") {
+  if(componentLookup) {
     return (
       <AppRenderer>
-        <Cattle />
-      </AppRenderer>
-    )
-  }
-
-  if (parsedPathname === "contact") {
-    return (
-      <AppRenderer>
-        <Contact />
+        {componentLookup}
       </AppRenderer>
     )
   }
@@ -38,14 +27,13 @@ export default function Template({ data, location }) {
   return (
     <AppRenderer>
       <div className="template-buffer">
-        <div className="blog-post">
-          <h1>{frontmatter.name}</h1>
-          <h2>{frontmatter.type}</h2>
+          <div>
+            <h1>{frontmatter.name}</h1>
+          </div>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-        </div>
       </div>
     </AppRenderer>
   )

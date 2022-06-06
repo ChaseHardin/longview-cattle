@@ -9,8 +9,8 @@ export const Logo = () => {
       <Typography fontSize={'2rem'} justifyContent='middle' fontWeight={'bold'}>
         Longview
       </Typography>
-      <Typography fontSize='1.25rem'>
-        CATTLE
+      <Typography fontSize='1.5rem'>
+        Farms
       </Typography>
     </div>
   )

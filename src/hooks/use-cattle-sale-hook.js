@@ -14,7 +14,18 @@ export const useCattleForSale = () => {
               slug
               sex
               type
+              cert
+              semen
+              featuredImage {
+                childImageSharp {
+                  fluid(quality: 100, maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
+            html
+            excerpt
           }
         }
       }

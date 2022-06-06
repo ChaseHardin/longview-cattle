@@ -4,6 +4,7 @@ body {
 
 .template-buffer {
     margin-top: 4rem;
+    display: flex;
 }
 
 .app-container {

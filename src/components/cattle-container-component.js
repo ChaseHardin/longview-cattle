@@ -10,6 +10,7 @@ export const CattleContainer = ({ type }) => {
   const [tabValue, setTabValue] = React.useState(0)
 
   const cattle = useCattleForSale()
+
   const filteredCattle = useCattleFilter(cattle, tabValue, type)
   
   const handleTabsChange = (_, newValue) => setTabValue(newValue)
@@ -23,13 +24,17 @@ export const CattleContainer = ({ type }) => {
           sm={12}
           md={6}
           lg={4}
-          xl={3}
           className={"card-container"}
         >
           <CattleCard
             title={edge.node.frontmatter.name}
             shortDescription={edge.node.frontmatter.shortDescription}
             linkTo={edge.node.frontmatter.slug}
+            excerpt={edge.node.excerpt}
+            featuredImage={edge.node.frontmatter.featuredImage}
+            htmlMarkup={edge.node.html}
+            cert={edge.node.frontmatter.cert}
+            semen={edge.node.frontmatter.semen}
           />
         </Grid>
       )
