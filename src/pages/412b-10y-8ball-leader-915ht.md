@@ -1,9 +1,8 @@
 ---
 slug: "/bulls/412b-10y-8ball-leader-915ht"
-name: "412B 10Y 8Ball Leader 915HT"
+name: "8 Ball Leader 915HT"
 type: "showcase"
 sex: "male"
-shortDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap."
 featuredImage: ../images/8ball-leader.jpg
 cert: 50
 semen: 35

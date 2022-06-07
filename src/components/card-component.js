@@ -12,38 +12,41 @@ import { Chip } from "@mui/material"
 
 export function CattleCard({
   title,
-  shortDescription,
   linkTo,
   excerpt,
   featuredImage,
   htmlMarkup,
   cert,
-  semen
+  semen,
 }) {
   return (
     <Card>
       {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
-      <CardContent className="card-content">
-        <div style={{display: 'flex', gap: '.5rem'}}>
-          <Typography gutterBottom variant="h5" component="div">
+      <CardContent>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginBottom: "-15px",
+          }}
+        >
+          <Typography gutterBottom variant="h5">
             {title}
           </Typography>
-          <Chip label={`Semen $${semen}`} color={'primary'} />
-          <Chip label={`Certs $${cert}`} color={'secondary'} />
+          <div style={{ display: "flex", gap: ".5rem" }}>
+            <Chip label={`Semen $${semen}`} color={"secondary"} />
+            <Chip label={`Certs $${cert}`} color={"info"} />
+          </div>
         </div>
-        <Typography
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: htmlMarkup }}
-        />
+        <Typography align="justify" dangerouslySetInnerHTML={{ __html: htmlMarkup }} />
       </CardContent>
       <CardActions>
         <Button
           style={{ width: "100%" }}
-          size={"large"}
           onClick={() => navigate(linkTo)}
           variant={"contained"}
         >
-          View EPD
+          View on ABHA
         </Button>
       </CardActions>
     </Card>

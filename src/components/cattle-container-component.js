@@ -17,6 +17,8 @@ export const CattleContainer = ({ type }) => {
 
   const renderCards = () => {
     return filteredCattle.map((edge, index) => {
+      const {frontmatter} = edge.node;
+
       return (
         <Grid
           item
@@ -27,14 +29,13 @@ export const CattleContainer = ({ type }) => {
           className={"card-container"}
         >
           <CattleCard
-            title={edge.node.frontmatter.name}
-            shortDescription={edge.node.frontmatter.shortDescription}
-            linkTo={edge.node.frontmatter.slug}
+            title={frontmatter.name}
+            linkTo={frontmatter.slug}
             excerpt={edge.node.excerpt}
-            featuredImage={edge.node.frontmatter.featuredImage}
+            featuredImage={frontmatter.featuredImage}
             htmlMarkup={edge.node.html}
-            cert={edge.node.frontmatter.cert}
-            semen={edge.node.frontmatter.semen}
+            cert={frontmatter.cert}
+            semen={frontmatter.semen}
           />
         </Grid>
       )
