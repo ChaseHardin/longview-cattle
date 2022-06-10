@@ -11,7 +11,7 @@ export const NavigationBar = () => {
     },
     {
       to: "/herd",
-      title: "The herd",
+      title: "The Herd",
     },
     {
       to: "/sale",
