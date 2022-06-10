@@ -3,7 +3,7 @@ slug: "/bulls/10y-hightown-713h"
 name: "10Y Hightown 713H"
 type: "showcase"
 sex: "male"
-featuredImage: ../images/hightown-01.jpg
+featuredImage: ../images/htown-10y.jpg
 cert: 50
 semen: 25
 ---

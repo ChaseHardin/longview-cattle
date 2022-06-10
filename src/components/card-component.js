@@ -21,8 +21,8 @@ export function CattleCard({
 }) {
   return (
     <Card>
-      {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
-      <CardContent>
+      {featuredImage && <Img className={'card-image'} fluid={featuredImage.childImageSharp.fluid} />}
+      <CardContent className={'card-content'}>
         <div
           style={{
             display: "flex",
