@@ -1,4 +1,4 @@
 ---
-slug: "/showcase"
-type: "Showcase"
+slug: "/herd"
+type: "The heard"
 ---

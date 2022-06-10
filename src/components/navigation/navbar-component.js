@@ -10,8 +10,8 @@ export const NavigationBar = () => {
       title: "Home",
     },
     {
-      to: "/showcase",
-      title: "Showcase",
+      to: "/herd",
+      title: "The herd",
     },
     {
       to: "/sale",

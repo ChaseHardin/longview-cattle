@@ -12,7 +12,7 @@ export default function Template({ data, location }) {
 
   const componentLookup = {
     sale: <CattleForSale/>,
-    showcase: <Cattle/>,
+    herd: <Cattle/>,
     contact: <Contact/>
   }[parsedPathname];
 
