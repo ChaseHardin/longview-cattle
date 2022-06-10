@@ -15,6 +15,7 @@ export const useCattleForSale = () => {
               type
               cert
               semen
+              price
               featuredImage {
                 childImageSharp {
                   fluid(quality: 100, maxWidth: 800) {

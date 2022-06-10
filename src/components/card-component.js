@@ -18,6 +18,7 @@ export function CattleCard({
   htmlMarkup,
   cert,
   semen,
+  price
 }) {
   return (
     <Card>
@@ -34,6 +35,7 @@ export function CattleCard({
             {title}
           </Typography>
           <div style={{ display: "flex", gap: ".5rem" }}>
+            {price && <Chip label={`Price $${price}`} color={"primary"} />}
             {semen && <Chip label={`Semen $${semen}`} color={"secondary"} />}
             {cert && <Chip label={`Certs $${cert}`} color={"info"} />}
           </div>

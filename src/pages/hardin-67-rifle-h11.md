@@ -1,5 +1,5 @@
 ---
-slug: "/bulls/10y-hightown-713h"
+slug: "/bulls/67-rifle-h11"
 name: "67 Rifle H11"
 type: "showcase"
 sex: "male"

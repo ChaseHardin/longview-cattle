@@ -1,5 +1,5 @@
 ---
-slug: "/bulls/10y-hightown-713h"
+slug: "/bulls/poldark-h53"
 name: "708T Poldark H53"
 type: "showcase"
 sex: "male"

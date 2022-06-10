@@ -36,6 +36,7 @@ export const CattleContainer = ({ type }) => {
             htmlMarkup={edge.node.html}
             cert={frontmatter.cert}
             semen={frontmatter.semen}
+            price={frontmatter.price}
           />
         </Grid>
       )
