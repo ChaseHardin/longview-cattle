@@ -1,5 +1,6 @@
 ---
 slug: "/bulls/67-rifle-h11"
+abhaUrl: "https://abha.digitalbeef.com/animal.php?registration=HB019642"
 name: "67 Rifle H11"
 type: "showcase"
 sex: "male"

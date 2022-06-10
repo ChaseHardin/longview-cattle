@@ -1,5 +1,6 @@
 ---
 slug: "/bulls/poldark-h53"
+abhaUrl: "https://abha.digitalbeef.com/animal.php?registration=HB019659"
 name: "708T Poldark H53"
 type: "showcase"
 sex: "male"

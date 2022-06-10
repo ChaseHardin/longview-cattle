@@ -1,5 +1,6 @@
 ---
 slug: "/bulls/412b-10y-8ball-leader-915ht"
+abhaUrl: "https://abha.digitalbeef.com/animal.php?registration=HB016247"
 name: "8 Ball Leader 915HT"
 type: "showcase"
 sex: "male"

@@ -1,5 +1,6 @@
 ---
 slug: "/bulls/10y-hightown-713h"
+abhaUrl: "https://abha.digitalbeef.com/animal.php?registration=HB011159"
 name: "10Y Hightown 713H"
 type: "showcase"
 sex: "male"

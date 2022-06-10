@@ -3,7 +3,7 @@
 }
 
 .card-content {
-    height: 200px;
+    height: 230px;
 }
 
 @media (max-width: 1000px) {
@@ -12,6 +12,7 @@
     }
 
     .card-content {
-        height: 350px;
+        height: 200px;
+        overflow: auto;
     }
 }

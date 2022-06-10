@@ -1,5 +1,6 @@
 ---
 slug: "/cows/4037-miss-durango-9028w"
+abhaUrl: "https://abha.digitalbeef.com/animal.php?registration=HB006571"
 name: "Miss Durango 9028W"
 type: "showcase"
 sex: "female"

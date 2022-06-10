@@ -37,6 +37,7 @@ export const CattleContainer = ({ type }) => {
             cert={frontmatter.cert}
             semen={frontmatter.semen}
             price={frontmatter.price}
+            abhaUrl={frontmatter.abhaUrl}
           />
         </Grid>
       )

@@ -18,7 +18,8 @@ export function CattleCard({
   htmlMarkup,
   cert,
   semen,
-  price
+  price,
+  abhaUrl
 }) {
   return (
     <Card>
@@ -35,7 +36,7 @@ export function CattleCard({
             {title}
           </Typography>
           <div style={{ display: "flex", gap: ".5rem" }}>
-            {price && <Chip label={`Price $${price}`} color={"primary"} />}
+            {price && <Chip label={`Price $${price}`} color={"secondary"} />}
             {semen && <Chip label={`Semen $${semen}`} color={"secondary"} />}
             {cert && <Chip label={`Certs $${cert}`} color={"info"} />}
           </div>
@@ -45,10 +46,10 @@ export function CattleCard({
       <CardActions>
         <Button
           style={{ width: "100%" }}
-          onClick={() => navigate(linkTo)}
+          onClick={() => navigate(abhaUrl)}
           variant={"contained"}
         >
-          View on ABHA
+          EPDs and Pedigree - ABHA Digital Beef
         </Button>
       </CardActions>
     </Card>

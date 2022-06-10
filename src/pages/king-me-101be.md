@@ -1,5 +1,6 @@
 ---
 slug: "/bulls/kingme-101be"
+abhaUrl: "https://abha.digitalbeef.com/animal.php?registration=HB022121"
 name: "KingMe 101BE"
 type: "sale"
 sex: "male"

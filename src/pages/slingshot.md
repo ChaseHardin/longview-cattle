@@ -1,5 +1,6 @@
 ---
 slug: "/bulls/squared-107bb"
+abhaUrl: "https://abha.digitalbeef.com/animal.php?registration=HB022118"
 name: "Slingshot 137BB"
 type: "sale"
 sex: "male"

@@ -1,5 +1,6 @@
 ---
 slug: "/cows/macy-412b"
+abhaUrl: "https://abha.digitalbeef.com/animal.php?registration=HB006571"
 name: "Macy 412B"
 type: "showcase"
 sex: "female"

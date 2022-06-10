@@ -1,5 +1,6 @@
 ---
 slug: "/cows/mona-lisa-h20"
+abhaUrl: "https://abha.digitalbeef.com/animal.php?registration=HB019648"
 name: "Mona Lisa H20"
 type: "showcase"
 sex: "female"
